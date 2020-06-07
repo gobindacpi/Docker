@@ -13,10 +13,10 @@ services:
     environment:
       - DB_NAME=cacti_master
       - DB_USER=cactiuser
-      - DB_PASS=S@ltsync250
+      - DB_PASS=password
       - DB_HOST=db
       - DB_PORT=3306
-      - DB_ROOT_PASS=S@ltsync250
+      - DB_ROOT_PASS=password
       - INITIALIZE_DB=1
       - TZ=Asia/Dhaka
     volumes:
@@ -55,7 +55,7 @@ services:
       - --innodb_io_capacity=5000
       - --innodb_io_capacity_max=10000
     environment:
-      - MYSQL_ROOT_PASSWORD=S@ltsync250
+      - MYSQL_ROOT_PASSWORD=password
       - TZ=Asia/Dhaka
     volumes:
       - cacti-db:/var/lib/mysql
